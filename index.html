@@ -1,0 +1,74 @@
+<!-- doctype declares the type of document, this is the newest version of html -->
+<!DOCTYPE html>
+<!-- all html tags are children of a html element -->
+<html>
+    <!-- meta data and refernces to css and js -->
+    <head>
+        <!-- displayed in the tab of the browser -->
+        <title>Hello World Site</title>
+        <!-- linking css and js -->
+        <!-- link tag for css -->
+        <link href="./css/styles.css" rel="stylesheet" />
+        <!-- script tags take a src prop and are not void -->
+        <script src="./js/scripts.js"></script>
+    </head>
+
+    <!-- all of the visable html elements -->
+    <body>
+        <!-- headers are block elements -->
+        <!-- divs = block layout elements, spans = inline layout element -->
+        <h1>Hello, World 🌎</h1>
+        <h2>I am an h2</h2>
+        <h3>I am an h3</h3>
+        <div class="green-background">
+            <h4>I am an h4</h4>
+            <h5>I am an h5</h5>
+            <h6>I am an h6</h6>
+        </div>
+
+        <h5>I am not blue</h5>
+
+        <!-- strong is an inline element -->
+        <p>I am a paragraph, 
+            <strong>
+                I am some bold text, and <span class="green-background">I am a different color!</span>
+            </strong>
+        </p>
+
+        <p>I am the next paragraph</p>
+
+        <div>
+            <h2>CSS DISPLAY PROPERTIES</h2>
+
+            <p class="inline">I am inline</p>
+
+            <p class="inline">I am inline (number two)</p>
+
+            <p>hello <span class="block">this span is block</span> goodbye</p>
+
+        </div>
+
+        <div>
+            <h2>CSS BOX MODEL</h2>
+
+            <div class="center">I am in the center!</div>
+
+            <div class="margin border padding">
+                Box Model Example div
+            </div>
+        </div>
+
+        <div>
+            <h2>CSS POSITIONING</h2>
+
+            <div class="position-example">position: static (default)</div>
+            <div class="position-example relative">position: relative</div>
+            <div class="position-example fixed">
+                position: fixed
+                <div class="absolute">absolute</div>
+            </div>
+            <div class="position-example absolute">position: absolute</div>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,102 @@
+body {
+    background-color: orange;
+}
+
+/* selecting more than one element at once */
+h1, h2 {
+    color: white;
+}
+/* select child h5s of divs */
+div > h5 {
+    color: blue;
+}
+
+.green-background {
+    background-color: green;
+}
+
+/* 
+CSS DISPLAY PROPERTIES
+*/
+
+/* css can target the 'display' prop of an element */
+.inline {
+    display: inline;
+}
+
+.block {
+    display: block;
+    background-color: aqua;
+}
+/* 
+CSS BOX MODEL
+*/
+
+/* margin: the space AROUND an element */
+.margin {
+    /* long verbose way 
+    margin-top: 40px;
+    margin-right: 80px;
+    margin-bottom: 40px;
+    margin-left: 80px; */
+    /* margin: top right bottom left; */
+    /* margin: 40px 80px 40px 80px; */
+    /* margin: top-bottom right-left */
+    margin: 40px 80px;
+    /* margin: 0 auto; */
+}
+
+.border {
+    /* border: size type color; */
+    border: 10px solid blue;
+    /* border-top: 10px dotted green;
+    border-right: 20px solid pink; */
+}
+
+/* distance between content and border */
+.padding {
+    /* just one value -- goes all around */
+    padding: 30px;
+}
+
+.center {
+    /* centering block elements */
+    margin: 0 auto;
+    /* centering inline elements */
+    text-align: center;
+}
+/* 
+CSS POSITIONING
+*/
+
+.position-example {
+    width: 100px;
+    height: 100px;
+    background-color: antiquewhite;
+}
+
+/* position static: default, fit in the flow normally */
+
+/* relative -- move away from the defualt position on page  */
+.relative {
+    position: relative;
+    /* push away from the top and the left */
+    left: 300px;
+    top: 80px;
+}
+
+/* fixed -- relative to the browser view window */
+.fixed {
+    position: fixed;
+    /* lock on the bottom of the window */
+    bottom: 0;
+    left: 400px;
+}
+
+/* poistion relative but only relative to the parent that the element is in */
+.absolute {
+    position: absolute;
+    /* move away from the left and the top of the parent */
+    left: 30px;
+    top: 50px;
+}
